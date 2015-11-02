@@ -9,10 +9,13 @@ public class CurrentTime {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(CurrentTime.getTime());
-		for (String arg : args) {
-			System.out.println(arg);	
+		
+		if (args.length > 0) {
+			System.out.print(args[0]);	
 		}
+		
+		System.out.println(CurrentTime.getTime());
+		
 	}
 
 }
